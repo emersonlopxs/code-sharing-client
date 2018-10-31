@@ -1,0 +1,13 @@
+{
+  "main.css": "/code-sharing-client-build/static/css/main.8da25a1c.chunk.css",
+  "main.js": "/code-sharing-client-build/static/js/main.7d043c92.chunk.js",
+  "main.js.map": "/code-sharing-client-build/static/js/main.7d043c92.chunk.js.map",
+  "static/js/1.ed5f83da.chunk.js": "/code-sharing-client-build/static/js/1.ed5f83da.chunk.js",
+  "static/js/1.ed5f83da.chunk.js.map": "/code-sharing-client-build/static/js/1.ed5f83da.chunk.js.map",
+  "runtime~main.js": "/code-sharing-client-build/static/js/runtime~main.da0c0432.js",
+  "runtime~main.js.map": "/code-sharing-client-build/static/js/runtime~main.da0c0432.js.map",
+  "static/css/main.8da25a1c.chunk.css.map": "/code-sharing-client-build/static/css/main.8da25a1c.chunk.css.map",
+  "index.html": "/code-sharing-client-build/index.html",
+  "precache-manifest.751d0897910e99bc4bc75faeaae7eb74.js": "/code-sharing-client-build/precache-manifest.751d0897910e99bc4bc75faeaae7eb74.js",
+  "service-worker.js": "/code-sharing-client-build/service-worker.js"
+}
