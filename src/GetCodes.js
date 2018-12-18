@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './App.css';
 
 class GetCodes extends Component {
@@ -16,7 +16,7 @@ class GetCodes extends Component {
   componentDidMount() {
     const submitData = async code => {
       try {
-        const url = 'https://grim-dracula-74484.herokuapp.com/api/all';
+        const url = 'https://dry-peak-50782.herokuapp.com/api/all';
         const data = await fetch(url, {
           method: 'GET', // or 'PUT'
           headers: {
@@ -47,6 +47,7 @@ class GetCodes extends Component {
     return (
       <div className="App">
         <h1>Welcome to code sharing!</h1>
+        <Router></Router>
         <Link to="/create_code">Create New</Link>
 
         {codes}

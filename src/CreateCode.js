@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { BrowserRouter as Link } from 'react-router-dom';
 
 class CreateCode extends Component {
   state = {
@@ -22,7 +23,7 @@ class CreateCode extends Component {
 
     const submitData = async code => {
       try {
-        const url = 'https://grim-dracula-74484.herokuapp.com/api/';
+        const url = 'https://dry-peak-50782.herokuapp.com/api';
         const data = await fetch(url, {
           method: 'POST', // or 'PUT'
           body: JSON.stringify(code), // data can be `string` or {object}!
@@ -43,6 +44,7 @@ class CreateCode extends Component {
   render() {
     return (
       <div className="App">
+      <Router></Router>
         <Link to="/">See All Codes</Link>
         <br />
         <form action="">
