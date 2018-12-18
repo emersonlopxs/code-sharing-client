@@ -10,19 +10,16 @@ class App extends Component {
     codes: []
   };
 
-  
-
   componentDidMount() {
     console.log('hello motherfucker, this is my website I can say that now');
   }
   render() {
     return (
-
-        <Switch>
-          <Route exact path="/" component={GetCodes} />
-          <Route path="/create_code" component={CreateCode} />
-        </Switch>
-
+      // dont fucking add router here
+      <Switch>
+        <Route exact path="/" component={GetCodes} />
+        <Route path="/create_code" component={CreateCode} />
+      </Switch>
     );
   }
 }
