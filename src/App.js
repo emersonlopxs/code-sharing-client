@@ -16,12 +16,12 @@ class App extends Component {
   render() {
     return (
       // dont fucking add router here
-      <Router>
+      // <Router>
         <Switch>
           <Route exact path="/" component={GetCodes} />
           <Route path="/create_code" component={CreateCode} />
         </Switch>
-      </Router>
+      // </Router>
     );
   }
 }
