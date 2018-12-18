@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { BrowserRouter as Link } from 'react-router-dom';
 
 class CreateCode extends Component {
@@ -44,7 +44,7 @@ class CreateCode extends Component {
   render() {
     return (
       <div className="App">
-      <Router></Router>
+      {/* <Router></Router> */}
         <Link to="/">See All Codes</Link>
         <br />
         <form action="">

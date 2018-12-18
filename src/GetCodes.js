@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 class GetCodes extends Component {
@@ -47,7 +47,6 @@ class GetCodes extends Component {
     return (
       <div className="App">
         <h1>Welcome to code sharing!</h1>
-        <Router></Router>
         <Link to="/create_code">Create New</Link>
 
         {codes}
