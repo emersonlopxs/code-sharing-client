@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import GetCodes from './GetCodes';
@@ -16,10 +16,12 @@ class App extends Component {
   render() {
     return (
       // dont fucking add router here
-      <Switch>
-        <Route exact path="/" component={GetCodes} />
-        <Route path="/create_code" component={CreateCode} />
-      </Switch>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={GetCodes} />
+          <Route path="/create_code" component={CreateCode} />
+        </Switch>
+      </Router>
     );
   }
 }
