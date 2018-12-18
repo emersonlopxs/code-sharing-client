@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
-// import GetCodes from './GetCodes';
-// import CreateCode from './CreateCode';
+import GetCodes from './GetCodes';
+import CreateCode from './CreateCode';
 
 class App extends Component {
   state = {
     codes: []
   };
 
-  componentDidMount() {}
+  
+
+  componentDidMount() {
+    console.log('hello motherfucker, this is my website I can say that now');
+  }
   render() {
     return (
-      // <Router>
-      //   <Switch>
-      //     <Route exact path="/" component={GetCodes} />
-      //     <Route path="/create_code" component={CreateCode} />
-      //   </Switch>
-      // </Router>
-      <h1>hello</h1>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={GetCodes} />
+          <Route path="/create_code" component={CreateCode} />
+        </Switch>
+      </Router>
     );
   }
 }
