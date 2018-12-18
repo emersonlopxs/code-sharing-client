@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
-import GetCodes from './GetCodes';
-import CreateCode from './CreateCode';
+// import GetCodes from './GetCodes';
+// import CreateCode from './CreateCode';
 
 class App extends Component {
   state = {
@@ -13,12 +13,13 @@ class App extends Component {
   componentDidMount() {}
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={GetCodes} />
-          <Route path="/create_code" component={CreateCode} />
-        </Switch>
-      </Router>
+      // <Router>
+      //   <Switch>
+      //     <Route exact path="/" component={GetCodes} />
+      //     <Route path="/create_code" component={CreateCode} />
+      //   </Switch>
+      // </Router>
+      <h1>hello</h1>
     );
   }
 }
