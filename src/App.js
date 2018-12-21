@@ -5,6 +5,10 @@ import './App.css';
 import GetCodes from './GetCodes';
 import CreateCode from './CreateCode';
 
+// in this video we're gonna talk about the key points.
+// pregressive web apps aren't somthing that you shouldn't use 
+// because they are shit
+
 class App extends Component {
   state = {
     codes: []

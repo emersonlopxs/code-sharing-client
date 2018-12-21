@@ -4,7 +4,8 @@ import './App.css';
 
 class GetCodes extends Component {
   state = {
-    codes: []
+    codes: [],
+    isLoading: true
   };
 
   handleChange = e => {
@@ -25,7 +26,7 @@ class GetCodes extends Component {
         });
 
         const response = await data.json();
-        this.setState({ codes: response });
+        this.setState({ codes: response, isLoading: false });
         console.log(response);
       } catch (error) {
         console.log(error);
@@ -48,8 +49,7 @@ class GetCodes extends Component {
       <div className="App">
         <h1>Welcome to code sharing!</h1>
         <Link to="/create_code">Create New</Link>
-
-        {codes}
+        {this.state.isLoading ? <p>loading...</p> : codes}
       </div>
     );
   }
