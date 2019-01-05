@@ -17,7 +17,7 @@ class CreateCode extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('hello world!');
+    console.log('hello worldddd!');
 
     const data = this.state;
 
