@@ -25,8 +25,8 @@ class CreateCode extends Component {
       try {
         const url = 'https://dry-peak-50782.herokuapp.com/api';
         const data = await fetch(url, {
-          method: 'POST', // or 'PUT'
-          body: JSON.stringify(code), // data can be `string` or {object}!
+          method: 'POST',
+          body: JSON.stringify(code),
           headers: {
             'Content-Type': 'application/json'
           }
@@ -44,7 +44,6 @@ class CreateCode extends Component {
   render() {
     return (
       <div className="App">
-      {/* <Router></Router> */}
         <Link to="/">See All Codes</Link>
         <br />
         <form action="">
